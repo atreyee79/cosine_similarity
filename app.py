@@ -32,5 +32,5 @@ def output():
     else :
         simi='not similar'   
     return render_template("home.html",predict= {simi}) 
-
-app.run(debug=True)    
+if __name__=='__main__':
+    app.run(debug=True)    
